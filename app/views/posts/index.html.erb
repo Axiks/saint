@@ -1,0 +1,33 @@
+<div class="container">
+	<div class="row 
+	">
+		<div class="col-12 pt-5 pb-5">
+			<h1>Список бажань</h1>
+		</div>
+		<div class="col-12">
+			<a class="btn btn-primary btn-sm" href="/posts/new">Написати саоє бажажння</a>
+		</div>
+		<div class="col-12 mt-3">
+			<div class="card-columns">
+
+			<% @posts.each do |post| %>
+			  <div class="card">
+			  	<!-- <div class="card-header">Header</div> -->
+			    <div class="card-body">
+			      <!-- <h5 class="card-title"><%= post.name %></h5> -->
+			      <p class="card-text"><%= post.text %></p>
+			      <p class="card-text text-right">
+			      		<small class="text-muted"><%= post.name %></small>
+			      </p>
+			    </div>
+			    <div class="card-footer">
+			      <small class="text-muted">Блок <%= post.room %></small>
+			      <small class="text-muted">Post Id: <%= post.id %></small>
+			    </div>
+			  </div>
+			 <% end %> 
+
+			</div>
+		</div>
+	</div>
+</div>

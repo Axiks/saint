@@ -1,0 +1,27 @@
+
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<h1 >Добавлення нового бажання</h1>
+
+			<%= form_for @post do |f| %>
+				<div class="form-control">
+					<%= f.label :"Твоє ім'я " %>
+					<%= f.text_field :name %>
+				</div>
+				<div class="form-control">
+					<%= f.label :"Напиши своє бажання " %>
+					<%= f.text_area :text %>
+				</div>
+				<div class="form-control">
+					<%= f.label :"Номер твого блоку " %>
+					<%= f.text_field :room %>
+				</div>
+				<div class="form-control">
+					<%= f.submit :"Відправити )" %>
+				</div>
+			<% end %> 
+		</div>
+	</div>
+</div>
