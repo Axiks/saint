@@ -6,8 +6,8 @@ class PostsController < ApplicationController
   	@post = Post.new
   end
   def show
-    @post = Post.find(3)
-  	render show: "helllo"
+    @post = Post.find(params[:id])
+  	render show: "hzzz"
   end
   def create
   	@post = Post.new(post_params)

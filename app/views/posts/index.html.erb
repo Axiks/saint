@@ -11,6 +11,7 @@
 			<div class="card-columns">
 
 			<% @posts.each do |post| %>
+			<a href="posts/<%= post.id %>">
 			  <div class="card">
 			  	<!-- <div class="card-header">Header</div> -->
 			    <div class="card-body">
@@ -25,6 +26,7 @@
 			      <small class="text-muted">Post Id: <%= post.id %></small>
 			    </div>
 			  </div>
+			</a>
 			 <% end %> 
 
 			</div>
